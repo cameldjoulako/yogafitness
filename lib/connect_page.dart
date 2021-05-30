@@ -15,7 +15,7 @@ class ConnectPage extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
             icon: Icon(
-              Icons.chevron_left,
+              Icons.arrow_back,
               color: Colors.black,
               size: 30,
             ),
@@ -23,15 +23,7 @@ class ConnectPage extends StatelessWidget {
               Navigator.pop(context);
             }),
         title: Text(""),
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.more_vert,
-                color: Colors.white,
-                size: 24,
-              ),
-              onPressed: null)
-        ],
+        actions: [],
         backgroundColor: Colors.white.withOpacity(0),
       ),
       body: SingleChildScrollView(
@@ -39,7 +31,7 @@ class ConnectPage extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.only(
-                top: 0,
+                top: 15,
                 left: 45.0,
                 right: 45,
               ),
@@ -55,7 +47,7 @@ class ConnectPage extends StatelessWidget {
                 top: 0,
                 left: 20.0,
                 right: 20,
-                bottom: 10,
+                bottom: 40,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -64,13 +56,14 @@ class ConnectPage extends StatelessWidget {
                     "Change starts here",
                     style: GoogleFonts.poppins(
                       color: d_red,
-                      fontSize: 21,
+                      fontSize: 25,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                   SizedBox(height: 10),
                   Text(
-                    """Save your progress to access your personal training program!""",
+                    """Save your progress to access your personal 
+                    training program!""",
                     style: GoogleFonts.poppins(
                       color: Colors.grey,
                       fontSize: 15,
@@ -81,7 +74,7 @@ class ConnectPage extends StatelessWidget {
             ),
             Container(
               margin: const EdgeInsets.only(
-                top: 10,
+                top: 5,
                 left: 40,
                 right: 40,
               ),
@@ -124,18 +117,18 @@ class ConnectPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        shape: StadiumBorder(),
-                        primary: Colors.blue[700],
-                        padding:
-                            EdgeInsets.all(13) //content padding inside button
-                        ),
+                      shape: StadiumBorder(),
+                      primary: Colors.blue[700],
+                      padding:
+                          EdgeInsets.all(13), //content padding inside button
+                    ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.face),
                         SizedBox(width: 20),
                         Text(
-                          'FACEBOOK',
+                          'FACEBOOK',    
                           style: GoogleFonts.poppins(
                             color: Colors.white,
                             fontSize: 16,
@@ -159,6 +152,10 @@ class ConnectPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(),
                         primary: Colors.white,
+                        side: BorderSide(
+                          width: 0.3,
+                          color: Colors.grey[300],
+                        ),
                         padding:
                             EdgeInsets.all(13) //content padding inside button
                         ),
