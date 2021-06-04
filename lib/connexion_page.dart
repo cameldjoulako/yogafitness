@@ -11,7 +11,7 @@ class ConnexionPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        elevation: 0,
+        elevation: 0.0,
         leading: IconButton(
             icon: Icon(
               Icons.close,
@@ -60,7 +60,7 @@ class ConnexionPage extends StatelessWidget {
             ),
             SizedBox(height: 60),
             LoginForm(),
-            SizedBox(height: 130),
+            SizedBox(height: 110),
             Align(
               alignment: Alignment.center,
               child: ElevatedButton(
@@ -91,7 +91,7 @@ class ConnexionPage extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 150),
+            SizedBox(height: 100),
             Align(
               alignment: Alignment.centerRight,
               child: Padding(

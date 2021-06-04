@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'connexion_page.dart';
 
 const d_red = const Color(0xFFE9717D);
@@ -125,10 +126,10 @@ class ConnectPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.face),
+                        FaIcon(FontAwesomeIcons.facebook),
                         SizedBox(width: 20),
                         Text(
-                          'FACEBOOK',    
+                          'FACEBOOK',
                           style: GoogleFonts.poppins(
                             color: Colors.white,
                             fontSize: 16,
@@ -162,9 +163,9 @@ class ConnectPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          Icons.golf_course,
-                          color: Colors.black,
+                        FaIcon(
+                          FontAwesomeIcons.google,
+                          color: Colors.green[700],
                         ),
                         SizedBox(width: 10),
                         Text(
