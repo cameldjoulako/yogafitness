@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:yogafitness/delayed_animation.dart';
-import 'connexion_page.dart';
+import 'loginpage.dart';
 
 const d_red = const Color(0xFFE9717D);
 
 // Page de lecture
-class ConnectPage extends StatelessWidget {
+class SigninPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,12 +35,12 @@ class ConnectPage extends StatelessWidget {
               delay: 1000,
               child: Container(
                 margin: const EdgeInsets.only(
-                  top: 15,
+                  top: 90,
                   left: 45.0,
                   right: 45,
                 ),
                 //width: 350,
-                height: 460,
+                height: 280,
                 child: Image.asset(
                   'images/instructeur.jpg',
                   //width: 350,
@@ -51,7 +51,7 @@ class ConnectPage extends StatelessWidget {
               delay: 2500,
               child: Container(
                 margin: const EdgeInsets.only(
-                  top: 0,
+                  top: 45,
                   left: 20.0,
                   right: 20,
                   bottom: 40,
@@ -63,8 +63,8 @@ class ConnectPage extends StatelessWidget {
                       "Change starts here",
                       style: GoogleFonts.poppins(
                         color: d_red,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 26,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     SizedBox(height: 10),
@@ -84,7 +84,7 @@ class ConnectPage extends StatelessWidget {
               delay: 3500,
               child: Container(
                 margin: const EdgeInsets.only(
-                  top: 5,
+                  top: 14,
                   left: 40,
                   right: 40,
                 ),
@@ -109,6 +109,7 @@ class ConnectPage extends StatelessWidget {
                             style: GoogleFonts.poppins(
                               color: Colors.white,
                               fontSize: 16,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],
@@ -117,7 +118,7 @@ class ConnectPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ConnexionPage(),
+                            builder: (context) => LoginPage(),
                           ),
                         );
                       },
@@ -136,12 +137,13 @@ class ConnectPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           FaIcon(FontAwesomeIcons.facebook),
-                          SizedBox(width: 20),
+                          SizedBox(width: 10),
                           Text(
                             'FACEBOOK',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
                               fontSize: 16,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],
@@ -150,7 +152,7 @@ class ConnectPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ConnexionPage(),
+                            builder: (context) => LoginPage(),
                           ),
                         );
                       },
@@ -172,9 +174,9 @@ class ConnectPage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          FaIcon(
-                            FontAwesomeIcons.google,
-                            color: Colors.green[700],
+                          Image.asset(
+                            'images/google.png',
+                            width: 20,
                           ),
                           SizedBox(width: 10),
                           Text(
@@ -182,6 +184,7 @@ class ConnectPage extends StatelessWidget {
                             style: GoogleFonts.poppins(
                               color: Colors.black,
                               fontSize: 16,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],
@@ -190,7 +193,7 @@ class ConnectPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ConnexionPage(),
+                            builder: (context) => LoginPage(),
                           ),
                         );
                       },

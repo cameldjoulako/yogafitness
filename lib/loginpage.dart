@@ -6,7 +6,7 @@ import 'main.dart';
 const d_red = const Color(0xFFE9717D);
 
 // Page de lecture
-class ConnexionPage extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class ConnexionPage extends StatelessWidget {
             icon: Icon(
               Icons.close,
               color: Colors.black,
-              size: 40,
+              size: 45,
             ),
             onPressed: () {
               Navigator.pop(context);
@@ -28,7 +28,6 @@ class ConnexionPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               margin: const EdgeInsets.only(
@@ -37,7 +36,7 @@ class ConnexionPage extends StatelessWidget {
                 right: 30,
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   DelayedAnimation(
                     delay: 1500,
@@ -56,8 +55,8 @@ class ConnexionPage extends StatelessWidget {
                     child: Text(
                       """It's recommended to connect your email address for us to better protect your information.""",
                       style: GoogleFonts.poppins(
-                        color: Colors.black,
-                        fontSize: 15,
+                        color: Colors.grey[600],
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -65,9 +64,9 @@ class ConnexionPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 75),
             LoginForm(),
-            SizedBox(height: 110),
+            SizedBox(height: 126),
             Align(
               alignment: Alignment.center,
               child: DelayedAnimation(
@@ -84,10 +83,11 @@ class ConnexionPage extends StatelessWidget {
                     ), //content padding inside button,
                   ),
                   child: Text(
-                    'GET STARTED',
+                    'CONFIRM',
                     style: GoogleFonts.poppins(
                       color: Colors.white,
                       fontSize: 15,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                   onPressed: () {
@@ -101,7 +101,7 @@ class ConnexionPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 100),
+            SizedBox(height: 90),
             Align(
               alignment: Alignment.centerRight,
               child: Padding(
