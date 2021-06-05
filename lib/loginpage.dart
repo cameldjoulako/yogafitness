@@ -113,7 +113,7 @@ class LoginPage extends StatelessWidget {
                     child: DelayedAnimation(
                       delay: 5500,
                       child: Text(
-                        "SkIP",
+                        "SKIP",
                         style: GoogleFonts.poppins(
                           color: Colors.black,
                           fontSize: 18,
